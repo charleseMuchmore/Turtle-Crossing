@@ -15,6 +15,7 @@ player = Player()
 car_manager = CarManager()
 scoreboard = Scoreboard()
 
+
 screen.listen()
 screen.onkeypress(player.move, "Up")
 
@@ -34,6 +35,7 @@ while game_is_on:
         scoreboard.add_point()
         car_manager.level_up()
     scoreboard.update_scoreboard()
+
 
 
 screen.exitonclick()

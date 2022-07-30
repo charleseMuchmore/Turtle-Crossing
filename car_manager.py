@@ -2,7 +2,7 @@ from turtle import Turtle
 import random
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
-MOVE_INCREMENT = 10
+MOVE_INCREMENT = 100
 MAX_PIXELS_FROM_CENTER = 250
 STARTING_X_POS = 300
 COLLISION_POINT_DISTANCE = 20
@@ -27,7 +27,9 @@ class CarManager():
             
     def move_cars(self):
         for car in self.all_cars:
+
             car.backward(self.car_speed)
+
 
     def check_distance(self, object):
         for car in self.all_cars:
@@ -38,7 +40,7 @@ class CarManager():
 
     def level_up(self):
         self.car_speed += MOVE_INCREMENT
-        print(f"method carspeed: {self.car_speed}")
+
 
 
 
