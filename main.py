@@ -16,6 +16,7 @@ screen.listen()
 screen.onkeypress(player.move, "Up")
 
 collision = False
+
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
@@ -30,4 +31,3 @@ while game_is_on:
 
 
 screen.exitonclick()
-
