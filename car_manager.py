@@ -1,4 +1,3 @@
-from configparser import MAX_INTERPOLATION_DEPTH
 from turtle import Turtle
 import random
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
@@ -28,7 +27,9 @@ class CarManager():
             
     def move_cars(self):
         for car in self.all_cars:
-            car.backward(STARTING_MOVE_DISTANCE)
+
+            car.backward(self.car_speed)
+
 
     def check_distance(self, object):
         for car in self.all_cars:
@@ -39,6 +40,7 @@ class CarManager():
 
     def level_up(self):
         self.car_speed += MOVE_INCREMENT
+
 
 
 
