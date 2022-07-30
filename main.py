@@ -29,8 +29,5 @@ while game_is_on:
     print(player.is_at_finish())
 
 
-        
-  
-
 screen.exitonclick()
 
