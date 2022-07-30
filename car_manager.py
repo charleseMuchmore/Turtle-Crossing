@@ -2,7 +2,7 @@ from turtle import Turtle
 import random
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
-MOVE_INCREMENT = 100
+MOVE_INCREMENT = 10
 MAX_PIXELS_FROM_CENTER = 250
 STARTING_X_POS = 300
 COLLISION_POINT_DISTANCE = 20
